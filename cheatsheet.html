@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Paolo's | Cheatsheet</title>
+
+        <!––link to css file ––>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <!––displays an icon in browser tab ––>
+        <link rel="icon" type="image/png" sizes="32x32" href="http://www.coppincs.com/students/paolo/favicon.png">
+
+    </head>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="projects.html" title="Projects">Projects</a>
+        <a href="gallery.html" title="Gallery">Gallery</a>
+        <a href="news.html" title="News">News</a>
+        <a href="contact.html" title="Contact">Contact</a>
+        <a href="https://github.com/techinologic" target="_blank" title="GitHub">GitHub</a>
+        <a href="https://twitter.com/PaoloSFTDEV" target="_blank" title="Twitter">Twitter</a>
+        <a href="logs.html" title="Site Change Log">Site Change Log</a>
+
+
+    </div>
+
+    <body>
+        <div id="banner">
+            <img src="images/banner.jpg" alt="lights banner" width="860" height="280">
+        </div>
+
+        <div class="content">
+            <div class="border">
+                <h2 class="heading1">My HTML Cheat Sheet</h2>
+            </div>
+            <br>
+
+            <div class="cheatsheet">
+
+                1. &lt;!DOCTYPE&gt;
+                <p>Although not a tag, but rather an instruction, this should always be the first line of an HTML code. This tells the browser about what version of HTML is made with so it knows what type of document to expect. </p>
+
+                <br>2. &lt;html&gt;&lt;/html&gt;
+                <p>This tag is the top-level element of an HTML document, also known as the root element. This defines the HTML document and all elements should be inside this. I think of this as the fence in my backyard.
+                </p>
+                <br>3. &lt;head&gt;&lt;/head&gt;
+                <p>This tag gives information, or to be more specific, metadata (a data that describes data), about the document. Inside the head tag are the title tags, and link tags that link to the CSS files and JavaScript. This is also we I linked my external fonts from google using script. 
+                </p>
+                <br>4. &lt;title&gt; &lt;/title&gt;
+                <p>Inside this tag will be the title of the webpage which can be seen on the browser tab. It can only take in text.
+                </p>
+                <br>5. &lt;li&gt;&lt;/li&gt;
+                <p>This tag is used when making a list, but must be used inside ordered list &lt;ol&gt; or unordered list &lt;ul&gt;. I used this in listing my navigation links (my first version), my future to do lists, and change logs. 
+                </p>
+                <br>6. &lt;a&gt; &lt;/a&gt;
+                <p>We use the anchor tag to define hyperlinks, which brings you to another page, different page locations and send email when clicked. It uses the attribute href which contains the URL where the hyperlink points to. My navigation links are all in anchor tags, that when clicked brings you to the page stated in the link.
+                </p>
+                <br>7. &lt;body&gt; &lt;/body&gt;
+                <p>The body tag defines the body of a document. This is where every page information will reside and there can only be one body tag for each page.
+                </p>
+                <br>8. &lt;ul&gt; &lt;/ul&gt;
+                <p>The unordered list is used we want to show an unordered bulleted list. As I stated above, this is used with &lt;li&gt; tag inside. 
+                </p>
+                <br>9. &lt;h1&gt; to &lt;h3&gt;
+                <p>These are section headings, the lower number means bigger text or a higher level. &lt;h1&gt;&lt;/h1&gt; are usually the title of the page like “Welcome to my page!” and &lt;h2&gt;&lt;/h2&gt; are usually the sub-titles and sub-headings.
+                </p>
+
+                <br>10. &lt;br&gt;
+                <p>This is the line break tag which inserts a line break, which moves the flow of content 1 line below. I may have abused this since I use it to make spaces between elements.
+                </p>
+                <br>11. &lt;em&gt;&lt;/em&gt;
+                <p>What is inside the emphasize tag will show italicize, showing emphasis. I prefer the &lt;strong&gt; tag than this one in emphasizing text.
+                </p>
+                <br>12. &lt;strong&gt;&lt;/strong&gt;
+                <p>The strong tag is also a way of emphasizing text. Any text inside the strong tag will show in boldface which I think is a better for emphasizing.
+                </p>
+                <br>13. &lt;img&gt; 
+                <p>The image tag is used to show an image into the document. Some of the attributes of the image tags are src, which is the location of the image, alt which is a description on the image, for people with disabilities, and the images dimensions width and height which defines how wide and tall the image should appear. 
+                </p>
+                <br>14. &lt;iframe&gt; &lt;/iframe&gt;
+                <p>The inline frame is used for embedding another HTML page into the current page. This is what I used when I embedded my essay files on my project page. 
+                </p>
+                <br>15. &lt;script&gt;&lt;/script&gt;
+                <p>This is a dedicated tag for JavaScript which is used to embed or source executable JavaScript code. I used this to reference an external font from google, and in embedding the Google Maps API in my contacts page.
+                </p>
+                <br>16. &lt;div&gt;&lt;/div&gt;
+                <p>The division tag is the generic container for content. By using div tags, we can group contents so we can easily style them in the stylesheets by using the class attribute. We can style each div tags if given separate classes by stating which class.
+                </p>
+                <br>17. &lt;nav&gt; &lt;/nav&gt;
+                <p>We use nav tags to represent part of the page used primarily in navigation links. Screen readers for disabled users will ignore the texts inside the nav tags. 
+                </p>
+                <br>18. &lt;footer&gt;&lt;/footer&gt;	
+                <p>The footer tag defines the section at the bottom of the page where information about the author, copyright or other information are contained. 
+                </p>                    <br>19. &lt;!—comments --&gt;
+                <p>This element is used to add a comment to an HTML document. Any text inside the tag are not rendered when the HTML document is rendered by a browser.
+                </p>
+                <br>20. &lt;hr&gt;
+                <p>The hr element is used as a horizontal separator of content when there is a change of topic in a section. It renders as a horizontal line and because of that I used it for presentation purposes but I know now that I shouldn’t.
+                </p>
+                <br>21. &lt;p&gt;&lt;/p&gt;
+                <p>The paragraph tag represents paragraphs of text, like in the books, where we see paragraphs as blocks of text separated from other paragraphs. Text enclosed in this tag will be formatted and will look like a paragraph.
+                </p>
+
+                <div class="caption_center">Source: Descriptions taken from W3Schools's HTML element reference and Mozilla MDN Web Docs.</div>
+            </div>
+
+            <!––Footer, copyright author dates, etc. ––>
+            <footer>
+                <hr>
+                <br>
+                &copy; Paolo Inocencion 2018
+                <br>
+                The contents of all pages published by students or individuals are solely the responsibility of the page authors. Statements made and opinions expressed are strictly those of the authors and not Coppin State University. Coppin State University does not review, approve, or endorse the contents of personal pages, nor does the University monitor the content of any page except as necessary to investigate alleged violations of University policies, federal, state, or local laws, or the rights of other persons. Individual publishers must comply with University policies, as well as all applicable laws, including those prohibiting copyright and trademark infringement. Violations may result in the imposition of sanctions.
+            </footer>
+
+        </div>
+    </body>
+</html>
+
