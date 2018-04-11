@@ -4,8 +4,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Open Sans, Helvetica, sans-serif;
-    background: #333;
-    color: #fff;
+    background: rgba(73, 196, 255, 0.9);
+    /*    background: #49c4ff;*/
+    color: #FFFFFF;
     font-size: 1.1em;
     line-height: 1.7;
     text-align: center;
@@ -31,23 +32,29 @@ p {
 
 .btn {
     display: inline-block;
-    background: #333;
-    color: #fff;
+/*        background: #49c4ff;*/
+    color: #FFFFFF;
     text-decoration: none;
     padding: .5em 1em;
-    border: 1px solid #666;
+    border: 3px solid #FFFFFF;
     margin: 1em 0;
+/*    text-shadow: 2px 2px #000;*/
 }
 
 .btn:hover {
-    background: #eaeaea;
-    color: #333;
+    background: #49c4ff;
+    color: #FFFFFF;
+}
+
+p a {
+    color: #2690D4;
+    font-size: 18pt;
 }
 
 
 /*Navigation*/
 
-#nav {
+#nav{
     /* using flex instead of inline-block removed 
     the annoying line between nav and showcase*/
     display: flex;
@@ -56,45 +63,71 @@ p {
     /* this is similar to float. 
     start = left, end = right*/
     justify-content: center;
+
 }
 
 #nav a {
     text-decoration: none;
-    color: #eaeaea;
+    color: #FFFFFF;
     padding: 15px 20px;
 }
 
 #nav a:hover {
-    background: #eaeaea;
-    color: #333;
+    background: #2690D4;
+    color: #FFFFFF;
 }
 
 #nav .active {
-    background: #eaeaea;
-    color: #333;
+    background: #2690D4;
+    color: #FFFFFF;
 }
 
 /* Header Showcase */
 
-#showcase {
+#showcase-index {
     min-height: 450px;
-    color: #fff;
     text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#showcase-projects {
+    min-height: 450px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#showcase-gallery {
+    min-height: 450px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#showcase-news {
+    min-height: 450px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#showcase-logs {
+    min-height: 450px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #showcase-index .bg-image {
     position: absolute;
-    background: #333 url("/students/paolo/images/showcase.jpg");
+    background: #FFFFFF url("../images/showcase.jpg");    
+/*    background: #FFFFFF url("/images/showcase.jpg");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 450px;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.85;
 }
 
-#showcase-projects .bg-image {
+#showcase-logs .bg-image {
     position: absolute;
     background: #333 url("/students/paolo/images/agile.jpg");
     background-position: center;
@@ -106,13 +139,99 @@ p {
     opacity: 0.4;
 }
 
+#showcase-news .bg-image {
+    position: absolute;
+    background: #333 url("/students/paolo/images/computer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.85;
+}
 
-#showcase h1 {
-    padding-top: 100px;
+#showcase-gallery .bg-image {
+    position: absolute;
+    background: #333 url("/students/paolo/images/baltimore.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#showcase-projects .bg-image {
+    position: absolute;
+    background: #333 url("/students/paolo/images/agile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#showcase-index h1 {
+    font-size: 3em;
+    padding-top: 80px;
     padding-bottom: 0;
+    color: #FFFFFF;
+}
+
+#showcase-projects h1 {
+    font-size: 3em;
+    padding-top: 80px;
+    padding-bottom: 0;
+    color: #FFFFFF;
+}
+
+#showcase-gallery h1 {
+    font-size: 3em;
+    padding-top: 80px;
+    padding-bottom: 0;
+    color: #FFFFFF;
+}
+
+#showcase-news h1 {
+    font-size: 3em;
+    padding-top: 80px;
+    padding-bottom: 0;
+    color: #FFFFFF;
+}
+
+#showcase-logs h1 {
+    font-size: 3em;
+    padding-top: 80px;
+    padding-bottom: 0;
+    color: #FFFFFF;
+}
+
+#showcase-index p {
+    font-size: 1em;
+    padding-bottom: 0;
+    color: #FFFFFF;
 }
 
 #showcase-projects .content-wrap,
+#section-a .content-wrap {
+    padding: 20px 1.5em;
+}
+
+#showcase-gallery .content-wrap,
+#section-a .content-wrap {
+    padding: 50px 1.5em;
+}
+
+#showcase-logs .content-wrap,
+#section-a .content-wrap {
+    padding: 50px 1.5em;
+}
+
+#showcase-news .content-wrap,
 #section-a .content-wrap {
     padding: 50px 1.5em;
 }
@@ -132,7 +251,6 @@ p {
 }
 
 #section-b ul {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -149,6 +267,13 @@ p {
 }
 
 /* Section C */
+
+#section-c-logs {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+    text-align: left;
+}
 
 #section-c {
     background: #fff;
@@ -225,6 +350,7 @@ p {
     #section-b ul {
         display: flex;
         justify-content: space-around;
+        list-style-type: none;
     }
 
     #section-b li {
@@ -315,6 +441,7 @@ p {
     text-align: left;
     padding: 0;
     margin: 0;
+    color: #2690D4;
 }
 
 .list-title {
@@ -346,36 +473,115 @@ p {
     padding: 2em;
 }
 
+#project-section-b-labfour {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
 #project-section-c {
     background: #eaeaea;
     color: #333;
     padding: 2em;
 }
 
-#showcase-projects {
-    height: 300px;
+.iframe {
+    position: relative;
+    height: 0;
+    overflow: hidden;
 }
 
-.iframe {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-}
- 
 /* 16x9 Aspect Ratio */
+
 .iframe {
-  padding-bottom: 56.25%;
+    padding-bottom: 56.25%;
 }
- 
+
 /* 4x3 Aspect Ratio */
+
 .iframe {
-  padding-bottom: 75%;
+    padding-bottom: 75%;
 }
- 
+
 .iframe iframe {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+
+.site-screenshot {
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+.btn-back-to-top {
+    display: inline-block;
+/*        background: #49c4ff;*/
+    color: #2690d4;
+    text-decoration: none;
+    padding: .5em 1em;
+    border: 3px solid #2690d4;
+    margin: 1em 0;
+/*    text-shadow: 2px 2px #000;*/
+}
+
+.btn-back-to-top:hover {
+    background: #49c4ff;
+    color: #FFFFFF;
+}
+
+/*DROP DOWN EXPERIMENT*/
+/*DROP DOWN EXPERIMENT*/
+
+/*DROP DOWN EXPERIMENT*/
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

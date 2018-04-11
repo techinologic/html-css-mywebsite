@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Paolo's | Gallery</title>
+
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="http://www.coppincs.com/students/paolo/favicon.png">
+
+
+    </head>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="projects.html" title="Projects">Projects</a>
+        <a class="active" href="gallery.html" title="Gallery">Gallery</a>
+        <a href="news.html" title="News">News</a>
+        <a href="contact.html" title="Contact">Contact</a>
+        <a href="https://github.com/techinologic" target="_blank" title="GitHub">GitHub</a>
+        <a href="https://www.facebook.com/paoloinocencion" target="_blank" title="Facebook">Facebook</a>
+
+    </div>
+
+
+
+    <body>
+
+        <div id="banner">
+            <img src="images/banner.jpg" alt="lights banner" width="860" height="280">
+        </div>
+
+        <div class="content">
+
+
+            <div style="text-align:center">
+
+                <h2 class="heading1">My Image Gallery</h2>
+                <hr>
+
+                Click on the images below to enlarge
+            </div>
+
+            <!-- 8 small images -->
+            <div class="row">
+                <div class="column">
+                    <img src="images/bench.jpg" alt="Bench" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/gate.jpg" alt="Gate" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/lake2.jpg" alt="Lake" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/tree.jpg" alt="Tree" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/vines.jpg" alt="Vines" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/lake.jpg" alt="Lake" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/street.jpg" alt="Street" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/track.jpg" alt="Track" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+
+            <script>
+                function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                }
+            </script>
+
+            <!––Footer, copyright author dates, etc. ––>
+            <footer>
+                &copy; Paolo Inocencion 2018
+            </footer>
+        </div>
+    </body>
+</html>

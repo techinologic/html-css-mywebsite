@@ -15,7 +15,8 @@
     <!-- displays an icon in browser tab -->
     <link rel="icon" type="image/png" sizes="32x32" href="http://www.coppincs.com/students/paolo/favicon.png">
 
-    <title>Paolo's | Gallery</title>
+
+    <title>Paolo's | Tutorials</title>
 </head>
 
 <body>
@@ -24,91 +25,52 @@
     <div id="nav" class="grid">
         <a href="index.html">Home</a>
         <a href="projects.html" title="Projects">Projects</a>
-        <a class="active" href="gallery.html" title="Gallery">Gallery</a>
+        <a href="gallery.html" title="Gallery">Gallery</a>
         <a href="news.html" title="News">News</a>
         <!--        <a href="contact.html" title="Contact">Contact</a>-->
-        <a href="logs.html" title="Site Change Log">Change Log</a>
+        <a class="active" href="logs.html" title="Change Log">Change Log</a>
         <a href="clock.html" title="JS Clock" target="_blank">Clock</a>
         <a href="mousetracker.html" title="JS tracker" target="_blank">Mouse-tracker</a>
-        <a href="../paolo/typingtest/index.html" title="Typing Test" target="_blank">Typing Test</a>
-        <a href="/students/paolo/login-system/index.php" title="Login" target="_blank">Login</a>
-
     </div>
 
     <!-- Header showcase -->
-    <header id="showcase-gallery" class="grid">
+    <header id="showcase-logs" class="grid">
         <div class="bg-image"></div>
         <div class="content-wrap">
-            <h1>Gallery</h1>
-            <p>My collection of photos from different places taken from my smartphone.</p>
+            <h1>Tutorials</h1>
+            <p>A place to keep track of anything software development related. You can't remember all of this can you?</p>
+
         </div>
     </header>
 
-    <main>
+    <!-- Main Area -->
+    <main id="main">
 
-        <div class="content">
-            <div style="text-align:center">
-
-                <h2 class="heading1">My Image Gallery</h2>
-            </div>
-
-            <!-- 8 small images -->
-            <div class="row">
-                <div class="column">
-                    <img src="images/bench.jpg" alt="Bench" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                    <img src="images/gate.jpg" alt="Gate" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                    <img src="images/lake2.jpg" alt="Lake" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                    <img src="images/tree.jpg" alt="Tree" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                    <img src="images/vines.jpg" alt="Vines" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                    <img src="images/lake.jpg" alt="Lake" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                    <img src="images/street.jpg" alt="Street" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                    <img src="images/track.jpg" alt="Track" style="width:100%" onclick="myFunction(this);">
-                </div>
-            </div>
-
-            <div class="container">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="expandedImg" style="width:100%">
-                <div id="imgtext"></div>
-            </div>
-
-            <script>
-                function myFunction(imgs) {
-                    var expandImg = document.getElementById("expandedImg");
-                    var imgText = document.getElementById("imgtext");
-                    expandImg.src = imgs.src;
-                    imgText.innerHTML = imgs.alt;
-                    expandImg.parentElement.style.display = "block";
-                }
-            </script>
-
-        </div>
-
-
-        <!-- Section C QUOTES-->
-        <section id="section-c" class="grid">
+        <section id="section-c-logs" class="grid">
             <div class="content-wrap">
-                <h2 class="content-title">It takes a wise man to learn from his mistakes, but an even wiser man to learn from others.</h2>
-                <p>Zen Proverb
-                </p>
+                <h2 class="content-title">Tutorials</h2>
+
+                <h3>Git Command Line: Push Project To Repository</h3>
+                <p>open command line and navigate to project root folder.</p>
+                <p>git init</p>
+                <p>git status</p>
+                <p>git add *</p>
+                <p>git commit -m "<em>MESSAGE</em>"</p>
+                <p>git remote add origin https://github.com/<em>USERNAME/REPOSITORY_NAME.git</em>"</p>
+                <p>git push -u origin master"</p>
+
+
+                <h3>GitHub README.md Syntax (markdown)</h3>
+                <h4>To display an image:</h4>
+                <p>![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")</p>
+
             </div>
         </section>
 
-        <!-- Section D - Contact and About Author-->
+
+
+
+        <!-- Section D -->
         <section id="section-d" class="grid">
             <div class="box">
                 <h2 class="content-title">Contact</h2>
@@ -136,7 +98,6 @@
         </section>
     </main>
 
-    <!--    Footer Below -->
     <footer id="main-footer" class="grid">
         <div class="legal">&copy;<a href="http://techinologic.com" target="_blank"> Paolo T. Inocencion</a></div>
         <div class="legal">
